@@ -1,0 +1,81 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "admin",
+        "password": "adminpassword",
+        "role": "admin"
+      },
+      {
+        "id": 2,
+        "username": "user",
+        "password": "userpassword",
+        "role": "accountant"
+      },
+      {
+        "id": 3,
+        "username": "Suraj",
+        "password": "Suraj#2724",
+        "role": "Founder"
+      }
+    ],
+    "invoices": [
+      {
+        "id": 1,
+        "invoiceNumber": "INV-001",
+        "date": "2024-01-01",
+        "dueDate": "2024-01-15",
+        "customerId": 1,
+        "items": [
+          {
+            "description": "Web Development Services",
+            "quantity": 10,
+            "price": 50,
+            "tax": 5
+          },
+          {
+            "description": "Hosting Services",
+            "quantity": 1,
+            "price": 100,
+            "tax": 10
+          }
+        ],
+        "totalAmount": 605,
+        "status": "unpaid",
+        "currency": "USD",
+        "isRecurring": false,
+        "recurringInterval": null,
+        "pdfGenerated": false,
+        "notificationsSent": [],
+        "createdBy": 1
+      }
+    ],
+    "customers": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "address": "123 Main St, Anytown, USA",
+        "phone": "123-456-7890"
+      }
+    ],
+    "payments": [
+      {
+        "id": 1,
+        "invoiceId": 1,
+        "amount": 605,
+        "date": "2024-01-10",
+        "method": "PayPal",
+        "transactionId": "TRANSACTION123"
+      }
+    ],
+    "reminders": [
+      {
+        "id": 1,
+        "invoiceId": 1,
+        "date": "2024-01-14",
+        "type": "due_soon"
+      }
+    ]
+  }
+  
